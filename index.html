@@ -3,11 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timothy's Page</title>
+    <title>Timothy Johnson | CS 499 ePortfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My CS Capstone: January 2024 - October 2025</h1>
-    <p>by Timothy Johnson</p>
+    <!-- Header Section -->
+    <header>
+        <h1>Timothy Johnson</h1>
+        <p>Computer Science Student | Aspiring Game Developer</p>
+        <nav>
+            <a href="#introduction">Introduction</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#enhancements">Enhancement Plan</a> |
+            <a href="#reflections">Reflections</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h2>Self-Introduction</h2>
+        <p><strong>Program Duration:</strong> I have been in the Computer Science program since January 2024.</p>
+        <h3>Key Skills Learned</h3>
+        <ul>
+            <li>Building applications from the ground up: design, coding, testing, and refining.</li>
+            <li>Using algorithms and data structures for faster, more efficient software.</li>
+            <li>Managing and securing information with databases in real-world scenarios.</li>
+        </ul>
+        <h3>Career Alignment</h3>
+        <p>These skills directly support my goal of entering the game development industry. Games require smooth interfaces, efficient code for real-time actions, and secure databases to protect user accounts and in-game data.</p>
+        <h3>Specialization Goals</h3>
+        <p>I am focusing on full-stack development with the goal of moving into game development. With esports growing and my kids surrounded by technology, I see gaming as the future. My childhood love for gaming has inspired me to pursue this path in computer science.</p>
+    </section>
+
+    <hr>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <h3>CS 360 Inventory App</h3>
+        <p>This mobile inventory app was built using Android Studio, Java, and SQLite. Users can add, update, delete, and query items in a warehouse inventory. The project helped me gain experience with:</p>
+        <ul>
+            <li>Mobile UI design and user experience (UX)</li>
+            <li>CRUD operations</li>
+            <li>Database integration and management</li>
+        </ul>
+        <p>Originally, I planned to include three projects (IT 145 Pet BAG, CS 340 Dashboard, and CS 360 Inventory App), but I decided to focus fully on the Inventory App to enhance it in all three categories.</p>
+        <!-- Screenshot placeholder -->
+        <p><em>Screenshot of Inventory App goes here</em></p>
+    </section>
+
+    <hr>
+
+    <!-- Enhancement Plan Section -->
+    <section id="enhancements">
+        <h2>Enhancement Plan</h2>
+
+        <!-- Category 1 -->
+        <h3>Category One: Software Engineering and Design</h3>
+        <ul>
+            <li>Refactor code to separate UI, business logic, and database responsibilities.</li>
+            <li>Improve mobile UI/UX for a professional look.</li>
+            <li>Add error handling for invalid input.</li>
+            <li>Introduce receipt generation when items are added or removed.</li>
+        </ul>
+        <pre>
+FUNCTION removeItem(itemID):
+    IF item exists:
+        DELETE item
+        PRINT receipt with item info and updated totals
+    ELSE:
+        PRINT "Item not found"
+        </pre>
+        <p><strong>Skills Demonstrated:</strong> Modular design, object-oriented refactoring, error handling, and UI improvements.</p>
+        <p><strong>Course Outcomes:</strong> #3 & #4</p>
+
+        <!-- Category 2 -->
+        <h3>Category Two: Algorithms and Data Structures</h3>
+        <ul>
+            <li>Optimize inventory lookup using a hash map for O(1) retrieval.</li>
+            <li>Allow sorting by name, category, or quantity using comparators.</li>
+            <li>Batch validation of multiple items using loops or Java Streams.</li>
+        </ul>
+        <pre>
+CLASS InventoryManager:
+    HashMap<String, Item> inventory
+
+FUNCTION addItem(item):
+    IF item.id exists in inventory:
+        THROW error
+    ELSE:
+        inventory.put(item.id, item)
+
+FUNCTION getItemByID(id):
+    RETURN inventory.get(id)
+
+FUNCTION getSortedInventory(sortBy):
+    CONVERT inventory.values() TO list
+    SORT list BY sortBy
+    RETURN sorted list
+        </pre>
+        <p><strong>Skills Demonstrated:</strong> Efficient data structures, algorithm optimization, OOP with performance in mind, unit testing.</p>
+        <p><strong>Course Outcomes:</strong> #3 & #4</p>
+
+        <!-- Category 3 -->
+        <h3>Category Three: Databases</h3>
+        <ul>
+            <li>Normalize tables into Items, Categories, and Locations.</li>
+            <li>Use prepared statements to prevent SQL injection.</li>
+            <li>Add reporting features (CSV/JSON export).</li>
+            <li>Encrypt sensitive data (admin passwords).</li>
+            <li>Optimize queries with indexes for fast searches.</li>
+        </ul>
+        <pre>
+FUNCTION addItem(item):
+    IF validate(item):
+        PREPARE SQL "INSERT INTO Items (id, name, category, quantity) VALUES (?, ?, ?, ?)"
+        BIND item.id, item.name, item.category, item.quantity
+        EXECUTE statement
+        RETURN "Item Added"
+    ELSE:
+        RETURN "Invalid input"
+        </pre>
+        <p><strong>Skills Demonstrated:</strong> Database design, secure data handling, query optimization, backend integration with UI.</p>
+        <p><strong>Course Outcomes:</strong> #4 & #5</p>
+    </section>
+
+    <hr>
+
+    <!-- Reflections Section -->
+    <section id="reflections">
+        <h2>Reflections</h2>
+        <ul>
+            <li>Modular design separating UI, logic, and database layers.</li>
+            <li>Optimized CRUD operations for large inventory datasets.</li>
+            <li>Refactored authentication and access controls for security.</li>
+            <li>Improved search, lookup, and sort algorithms for performance.</li>
+            <li>Enhanced database security with normalization, prepared statements, and encryption.</li>
+        </ul>
+        <p>This project allowed me to demonstrate growth in full-stack development, database management, secure coding, and algorithmic efficiency—skills I plan to bring into the game development industry.</p>
+    </section>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:timothyjjohnson2@gmail.com">timothyjjohnson2@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/timothyjjohnson">https://github.com/timothyjjohnson</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/timothy-johnson-093025297/">https://www.linkedin.com/in/timothy-johnson-093025297/</a></p>
+    </section>
+
+    <hr>
+    <footer>
+        <p>&copy; 2025 Timothy Johnson</p>
+    </footer>
 </body>
 </html>
