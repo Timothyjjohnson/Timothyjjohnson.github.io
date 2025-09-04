@@ -89,6 +89,7 @@
         <!-- Category 1 -->
         <h3>Category One: Software Engineering and Design</h3>
         <ul>
+            <li>I plan to refactor the code to separate UI, business logic, and data handling into different classes, like InventoryManager and SMSManager, to make everything more organized and easier to maintain. I also want to improve the UI by refining spacing, alignment, and overall style to make it look more professional. Right now, input validation is minimal, so I’ll add checks for things like positive quantities, proper dates, and valid emails. Finally, I want to add a simple receipt feature whenever items are added or removed, showing the details and updated totals.</li>
             <li>Refactor code to separate UI, business logic, and database responsibilities.</li>
             <li>Improve mobile UI/UX for a professional look.</li>
             <li>Add error handling for invalid input.</li>
@@ -108,6 +109,7 @@ FUNCTION removeItem(itemID):
         <!-- Category 2 -->
         <h3>Category Two: Algorithms and Data Structures</h3>
         <ul>
+            <li>Currently, inventory items are stored as strings in a list, which isn’t very efficient. I plan to create an InventoryItem class with unique IDs and use a HashMap for fast lookup. This will also make sorting by name, category, or quantity easier using comparators. I can also implement batch validation to check multiple items at once, like during imports or bulk updates.</li>
             <li>Optimize inventory lookup using a hash map for O(1) retrieval.</li>
             <li>Allow sorting by name, category, or quantity using comparators.</li>
             <li>Batch validation of multiple items using loops or Java Streams.</li>
@@ -136,6 +138,7 @@ FUNCTION getSortedInventory(sortBy):
         <!-- Category 3 -->
         <h3>Category Three: Databases</h3>
         <ul>
+            <li>Right now, data is only stored in memory, so it resets when the app closes. I plan to implement a database using SQLite or Room, with separate tables for items, categories, and locations. This will allow me to use prepared statements to safely add items, generate reports in CSV or JSON, and encrypt sensitive data like admin passwords. Indexes can help optimize searches so everything runs quickly.</li>
             <li>Normalize tables into Items, Categories, and Locations.</li>
             <li>Use prepared statements to prevent SQL injection.</li>
             <li>Add reporting features (CSV/JSON export).</li>
@@ -187,6 +190,7 @@ FUNCTION addItem(item):
     </footer>
 </body>
 </html>
+
 
 
 
