@@ -13,9 +13,9 @@
         <p>Computer Science Student | Aspiring Game Developer</p>
         <nav>
             <a href="#introduction">Introduction</a> |
-            <a href="#projects">Projects</a> |
+            <a href="#github">GitHub Pages</a> |
             <a href="#enhancements">Enhancement Plan</a> |
-            <a href="#reflections">Reflections</a> |
+            <a href="#skills">Skill Set</a> |
             <a href="#contact">Contact</a>
         </nav>
         <hr>
@@ -24,60 +24,29 @@
     <!-- Introduction Section -->
     <section id="introduction">
         <h2>Self-Introduction</h2>
-        <p><strong>Program Duration:</strong> I have been in the Computer Science program since January 2024 at SNHU and expect to graduate October 2025.</p>
+        <p><strong>Program Duration:</strong> I started the program in January 2024 and look forward to graduating on October 26th, 2025.</p>
+
         <h3>Key Skills Learned</h3>
         <ul>
-            <li>Building applications from the ground up: design, coding, testing, and refining.</li>
-            <li>Using algorithms and data structures for faster, more efficient software.</li>
-            <li>Managing and securing information with databases in real-world scenarios.</li>
+            <li>Understanding Scrum teams and effective collaboration.</li>
+            <li>Choosing an IDE that fits my workflow (Eclipse & Visual Studio).</li>
+            <li>Testing code to find and fix errors efficiently.</li>
         </ul>
+
         <h3>Career Alignment</h3>
-        <p>These skills directly support my goal of entering the game development industry. Games require smooth interfaces, efficient code for real-time actions, and secure databases to protect user accounts and in-game data.</p>
+        <p>These skills help me create clean, maintainable applications. My goal is to enter game development, and having a strong foundation in UI, algorithms, and data security will support that path.</p>
+
         <h3>Specialization Goals</h3>
-        <p>I am focusing on full-stack development with the goal of moving into game development. With esports growing and my kids surrounded by technology, I see gaming as the future. My childhood love for gaming has inspired me to pursue this path in computer science.</p>
+        <p>I want to specialize in full-stack development to eventually move into game development. Gaming has been a lifelong passion, and with my kids using technology every day, I see this as a natural career direction.</p>
     </section>
 
     <hr>
 
-    <!-- Projects Section -->
-    <section id="projects">
-    <h2>*Projects*</h2>
-
-    <div class="project">
-        <h3>CS 360: Inventory App (Primary Project / Focused for all three Artifacts)</h3>
-        <p>
-            This mobile application was built using Android Studio, Java, and SQLite. It manages inventory items with features such as add, update, delete, and query. Enhancements focus on modular design, algorithm optimization, UI improvements, and database security. This project demonstrates full-stack mobile development and aligns with my career goal of entering game development.
-        </p>
-    </div>
-    
-    <h2>~Future Projects to Enhance~</h2>
-        
-    <div class="project">
-        <h3>CS 340: Advanced Programming Dashboard</h3>
-        <p>
-            An interactive web dashboard for managing data from an animal shelter. Users can filter, sort, and view animals’ information on charts and maps. This project enhanced my understanding of algorithms, data structures, and user-centered design.
-        </p>
-    </div>
-
-    <div class="project">
-        <h3>IT 145: Pet BAG</h3>
-        <p>
-            A foundational application project to manage pet information, including CRUD operations and basic UI design. This project introduced me to core programming concepts and prepared me for more advanced coursework.
-        </p>
-    </div>
-
-    <div class="project">
-        <h3>CS 320: Appointment Management</h3>
-        <p>
-            Built a class-based appointment management system with validation and unit tests in JUnit. This project focused on algorithm optimization, data structures, and automated testing techniques.
-        </p>
-    </div>
-
-    <p>
-        Originally, I planned to include three projects (IT 145 Pet BAG, CS 340 Dashboard, and CS 360 Inventory App), but I decided to focus fully on the Inventory App to enhance it in all three categories.
-    </p>
-
-    <!-- Screenshot placeholder -->
+    <!-- GitHub Pages Section -->
+    <section id="github">
+        <h2>ePortfolio GitHub Pages</h2>
+        <p>My GitHub Pages URL is: <a href="https://timothyjjohnson.github.io/" target="_blank">https://timothyjjohnson.github.io/</a></p>
+        <p>My ePortfolio lives on GitHub, linking my projects from previous courses. Screenshots of my homepage with the URL are included in submissions.</p>
     </section>
 
     <hr>
@@ -88,100 +57,106 @@
 
         <!-- Category 1 -->
         <h3>Category One: Software Engineering and Design</h3>
-        <ul>
-            <li>I plan to refactor the code to separate UI, business logic, and data handling into different classes, like InventoryManager and SMSManager, to make everything more organized and easier to maintain. I also want to improve the UI by refining spacing, alignment, and overall style to make it look more professional. Right now, input validation is minimal, so I’ll add checks for things like positive quantities, proper dates, and valid emails. Finally, I want to add a simple receipt feature whenever items are added or removed, showing the details and updated totals.</li>
-            <li>Refactor code to separate UI, business logic, and database responsibilities.</li>
-            <li>Improve mobile UI/UX for a professional look.</li>
-            <li>Add error handling for invalid input.</li>
-            <li>Introduce receipt generation when items are added or removed.</li>
-        </ul>
+        <p><strong>Artifact:</strong> CS 360 Inventory App for managing 3D printing filament.</p>
+        <p><strong>Enhancement Plan:</strong> Refine UI layout, spacing, font sizes, add custom icons (like a spool of filament), and make it more user-friendly.</p>
         <pre>
-FUNCTION removeItem(itemID):
-    IF item exists:
-        DELETE item
-        PRINT receipt with item info and updated totals
-    ELSE:
-        PRINT "Item not found"
+WHEN user adds new filament:
+    SAVE filament info
+    SHOW confirmation message with filament details
+    UPDATE inventory screen
         </pre>
-        <p><strong>Skills Demonstrated:</strong> Modular design, object-oriented refactoring, error handling, and UI improvements.</p>
+        <p><strong>Skills Demonstrated:</strong> UI refinement, error handling, modular design.</p>
         <p><strong>Course Outcomes:</strong> #3 & #4</p>
 
         <!-- Category 2 -->
         <h3>Category Two: Algorithms and Data Structures</h3>
-        <ul>
-            <li>Currently, inventory items are stored as strings in a list, which isn’t very efficient. I plan to create an InventoryItem class with unique IDs and use a HashMap for fast lookup. This will also make sorting by name, category, or quantity easier using comparators. I can also implement batch validation to check multiple items at once, like during imports or bulk updates.</li>
-            <li>Optimize inventory lookup using a hash map for O(1) retrieval.</li>
-            <li>Allow sorting by name, category, or quantity using comparators.</li>
-            <li>Batch validation of multiple items using loops or Java Streams.</li>
-        </ul>
+        <p><strong>Artifact:</strong> Same CS 360 Inventory App.</p>
+        <p><strong>Enhancement Plan:</strong> Implement a <em>FilamentManager</em> class with HashMap for fast lookups, sorting, and batch validation.</p>
         <pre>
-CLASS InventoryManager:
-    HashMap<String, Item> inventory
+CLASS FilamentManager:
+    hashmap<String, FilamentItem> filaments
 
-FUNCTION addItem(item):
-    IF item.id exists in inventory:
-        THROW error
+FUNCTION addFilament(spool):
+    IF spool.id exists in filaments:
+        SHOW error "Spool already exists"
     ELSE:
-        inventory.put(item.id, item)
+        filaments.put(spool.id, spool)
 
-FUNCTION getItemByID(id):
-    RETURN inventory.get(id)
+FUNCTION findFilamentByID(id):
+    RETURN filaments.get(id)
 
-FUNCTION getSortedInventory(sortBy):
-    CONVERT inventory.values() TO list
-    SORT list BY sortBy
-    RETURN sorted list
+FUNCTION getSortedFilaments(by):
+    list = filaments.values()
+    SORT list by chosen property (color, weight, type)
+    RETURN list
         </pre>
-        <p><strong>Skills Demonstrated:</strong> Efficient data structures, algorithm optimization, OOP with performance in mind, unit testing.</p>
+        <p><strong>Skills Demonstrated:</strong> Efficient data structures, faster lookups, organized code.</p>
         <p><strong>Course Outcomes:</strong> #3 & #4</p>
 
         <!-- Category 3 -->
         <h3>Category Three: Databases</h3>
-        <ul>
-            <li>Right now, data is only stored in memory, so it resets when the app closes. I plan to implement a database using SQLite or Room, with separate tables for items, categories, and locations. This will allow me to use prepared statements to safely add items, generate reports in CSV or JSON, and encrypt sensitive data like admin passwords. Indexes can help optimize searches so everything runs quickly.</li>
-            <li>Normalize tables into Items, Categories, and Locations.</li>
-            <li>Use prepared statements to prevent SQL injection.</li>
-            <li>Add reporting features (CSV/JSON export).</li>
-            <li>Encrypt sensitive data (admin passwords).</li>
-            <li>Optimize queries with indexes for fast searches.</li>
-        </ul>
+        <p><strong>Artifact:</strong> Same CS 360 Inventory App.</p>
+        <p><strong>Enhancement Plan:</strong> Implement SQLite database with tables for spools, colors, and storage locations. Secure sensitive info and enable CSV/JSON exports.</p>
         <pre>
-FUNCTION addItem(item):
-    IF validate(item):
-        PREPARE SQL "INSERT INTO Items (id, name, category, quantity) VALUES (?, ?, ?, ?)"
-        BIND item.id, item.name, item.category, item.quantity
+FUNCTION addFilament(spool):
+    IF spool is valid:
+        PREPARE SQL "INSERT INTO Spools (id, name, color, weight) VALUES (?, ?, ?, ?)"
+        BIND spool.id, spool.name, spool.color, spool.weight
         EXECUTE statement
-        RETURN "Item Added"
+        RETURN "Spool Added"
     ELSE:
-        RETURN "Invalid input"
+        RETURN "Invalid spool"
+
+FUNCTION exportInventory(format):
+    QUERY all spools from database
+    IF format == "CSV":
+        EXPORT results to CSV
+    ELSE IF format == "JSON":
+        EXPORT results to JSON
+    RETURN "Inventory Exported"
+
+FUNCTION protectAdmin(password):
+    RETURN hash(password)
         </pre>
-        <p><strong>Skills Demonstrated:</strong> Database design, secure data handling, query optimization, backend integration with UI.</p>
+        <p><strong>Skills Demonstrated:</strong> Database design, secure coding, optimized queries, integration with UI.</p>
         <p><strong>Course Outcomes:</strong> #4 & #5</p>
     </section>
 
     <hr>
 
-    <!-- Reflections Section -->
-    <section id="reflections">
-        <h2>Reflections</h2>
+    <!-- Skill Set Section -->
+    <section id="skills">
+        <h2>ePortfolio Overall Skill Set</h2>
+        <h3>Code Review Skills</h3>
         <ul>
-            <li>Modular design separating UI, logic, and database layers.</li>
-            <li>Optimized CRUD operations for large inventory datasets.</li>
-            <li>Refactored authentication and access controls for security.</li>
-            <li>Improved search, lookup, and sort algorithms for performance.</li>
-            <li>Enhanced database security with normalization, prepared statements, and encryption.</li>
+            <li>Separate UI, logic, and database code for easier maintenance.</li>
+            <li>Efficient inventory handling and lookup for large datasets.</li>
+            <li>Secure handling of sensitive information.</li>
         </ul>
-        <p>This project allowed me to demonstrate growth in full-stack development, database management, secure coding, and algorithmic efficiency—skills I plan to bring into the game development industry.</p>
+
+        <h3>Narrative Skills</h3>
+        <ul>
+            <li>Explain improvements in search, sorting, and filtering.</li>
+            <li>Document how database and security measures protect data.</li>
+            <li>Communicate design decisions for usability, speed, and safety.</li>
+        </ul>
+
+        <h3>Professional Self-Assessment</h3>
+        <ul>
+            <li>Show growth in building apps from start to finish with screens, database, and security.</li>
+            <li>Demonstrate problem-solving with coding, database, and secure practices.</li>
+            <li>Identify areas of improvement in my own projects and implement changes.</li>
+        </ul>
     </section>
 
     <hr>
 
     <!-- Contact Section -->
     <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:timothyjjohnson2@gmail.com">timothyjjohnson2@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/timothyjjohnson">https://github.com/timothyjjohnson</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/tjtimothyjohnson/">https://www.linkedin.com/in/tjtimothyjohnson/</a></p>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:timothyjjohnson2@gmail.com">timothyjjohnson2@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/timothyjjohnson">https://github.com/timothyjjohnson</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/tjtimothyjohnson/">https://www.linkedin.com/in/tjtimothyjohnson/</a></p>
     </section>
 
     <hr>
@@ -190,11 +165,6 @@ FUNCTION addItem(item):
     </footer>
 </body>
 </html>
-
-
-
-
-
 
 
 
