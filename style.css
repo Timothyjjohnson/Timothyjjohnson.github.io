@@ -1,16 +1,18 @@
+/* General Page Setup */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #121212;
     color: #e0e0e0;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    text-align: center;
 }
 
 header {
     background-color: #0D47A1;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 20px 10px;
 }
 
 nav a {
@@ -23,14 +25,53 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Sections */
 section {
-    padding: 40px;
-    margin: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
     background-color: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    text-align: left;
 }
 
+/* Titles */
+.section-title {
+    color: #FF6F61;
+    border-bottom: 3px solid #FF6F61;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.sub-title {
+    color: #4FC3F7;
+    border-bottom: 2px dashed #4FC3F7;
+    padding-bottom: 3px;
+    margin-top: 30px;
+}
+
+/* Pseudo-code blocks */
+pre.pseudo {
+    background-color: #2e2e2e;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: #a5d6a7;
+}
+
+/* Images */
+.center-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
