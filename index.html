@@ -13,150 +13,80 @@
         <p>Computer Science Student | Aspiring Game Developer</p>
         <nav>
             <a href="#introduction">Introduction</a> |
-            <a href="#github">GitHub Pages</a> |
+            <a href="#education">Education Review</a> |
             <a href="#enhancements">Enhancement Plan</a> |
-            <a href="#skills">Skill Set</a> |
+            <a href="#skills">Skills</a> |
             <a href="#contact">Contact</a>
         </nav>
-        <hr>
     </header>
 
     <!-- Introduction Section -->
     <section id="introduction">
-        <h2>Self-Introduction</h2>
-        <p><strong>Program Duration:</strong> I started the program in January 2024 and look forward to graduating on October 26th, 2025.</p>
+        <h2>Introduction</h2>
+        <p>Hello, my name is Timothy Johnson. I began my Computer Science degree at SNHU in January 2024 and plan to graduate in October 2025. This portfolio highlights the enhancements I am planning for my work, showing how I will grow my skills and demonstrate readiness for the software development field.</p>
+        <p>My career goal is to become a game developer. Gaming has been a lifelong passion of mine, and I want to take the problem-solving, design, and coding skills I’ve built through this program and apply them to create interactive and engaging experiences. As a father of three, I’m motivated to build a career in a field I’m passionate about while also setting an example of dedication and creativity for my kids.</p>
+    </section>
 
-        <h3>Key Skills Learned</h3>
+    <!-- Education Review Section -->
+    <section id="education">
+        <h2>Education Review</h2>
+        <p>Throughout my coursework, I’ve worked with languages such as Java, Python, and C++ while gaining experience with development tools like Eclipse and Visual Studio. I’ve also learned how important it is to collaborate within agile teams, write clean and maintainable code, and use proper testing practices. These skills will support my transition into game development.</p>
+        <p>Some key takeaways from my courses include:</p>
         <ul>
-            <li>Understanding Scrum teams and effective collaboration.</li>
-            <li>Choosing an IDE that fits my workflow (Eclipse & Visual Studio).</li>
-            <li>Testing code to find and fix errors efficiently.</li>
+            <li><strong>CS 250:</strong> Gained experience with agile development, communication, and team roles.</li>
+            <li><strong>CS 320:</strong> Practiced unit testing and software quality assurance techniques.</li>
+            <li><strong>CS 360:</strong> Built a mobile inventory app that will serve as the foundation for my planned enhancements.</li>
+            <li><strong>CS 340:</strong> Learned about client/server development, threading, and database management.</li>
         </ul>
-
-        <h3>Career Alignment</h3>
-        <p>These skills help me create clean, maintainable applications. My goal is to enter game development, and having a strong foundation in UI, algorithms, and data security will support that path.</p>
-
-        <h3>Specialization Goals</h3>
-        <p>I want to specialize in full-stack development to eventually move into game development. Gaming has been a lifelong passion, and with my kids using technology every day, I see this as a natural career direction.</p>
+        <p>Together, these courses gave me the foundation for software engineering, algorithms and data structures, and databases—the three categories where I will make enhancements in this portfolio.</p>
     </section>
 
     <!-- Enhancement Plan Section -->
     <section id="enhancements">
         <h2>Enhancement Plan</h2>
 
-        <!-- Category 1 -->
-        <h3>Category One: Software Engineering and Design</h3>
-        <p><strong>Artifact:</strong> CS 360 Inventory App for managing 3D printing filament.</p>
-        <p><strong>Enhancement Plan:</strong> Refine UI layout, spacing, font sizes, add custom icons (like a spool of filament), and make it more user-friendly.</p>
-        <pre>
-WHEN user adds new filament:
-    SAVE filament info
-    SHOW confirmation message with filament details
-    UPDATE inventory screen
-        </pre>
-        <p><strong>Skills Demonstrated:</strong> UI refinement, error handling, modular design.</p>
-        <p><strong>Course Outcomes:</strong> #3 & #4</p>
+        <!-- Enhancement 1 -->
+        <h3>Software Engineering & Design</h3>
+        <p><strong>Planned Artifact:</strong> CS 360 Inventory App for managing 3D printing filament.</p>
+        <p><strong>Planned Enhancement:</strong> I will refine the app’s user interface by improving the layout, spacing, and typography. I also plan to add custom icons (such as filament spools) and make the app more visually appealing and user-friendly.</p>
 
-        <!-- Category 2 -->
-        <h3>Category Two: Algorithms and Data Structures</h3>
-        <p><strong>Artifact:</strong> Same CS 360 Inventory App.</p>
-        <p><strong>Enhancement Plan:</strong> Implement a <em>FilamentManager</em> class with HashMap for fast lookups, sorting, and batch validation.</p>
-        <pre>
-CLASS FilamentManager:
-    hashmap<String, FilamentItem> filaments
+        <!-- Enhancement 2 -->
+        <h3>Algorithms & Data Structures</h3>
+        <p><strong>Planned Artifact:</strong> CS 360 Inventory App.</p>
+        <p><strong>Planned Enhancement:</strong> I will implement a <code>FilamentManager</code> class that uses a HashMap for faster lookups, sorting, and validation. This will make the app more efficient and scalable, especially for larger inventories.</p>
 
-FUNCTION addFilament(spool):
-    IF spool.id exists in filaments:
-        SHOW error "Spool already exists"
-    ELSE:
-        filaments.put(spool.id, spool)
-
-FUNCTION findFilamentByID(id):
-    RETURN filaments.get(id)
-
-FUNCTION getSortedFilaments(by):
-    list = filaments.values()
-    SORT list by chosen property (color, weight, type)
-    RETURN list
-        </pre>
-        <p><strong>Skills Demonstrated:</strong> Efficient data structures, faster lookups, organized code.</p>
-        <p><strong>Course Outcomes:</strong> #3 & #4</p>
-
-        <!-- Category 3 -->
-        <h3>Category Three: Databases</h3>
-        <p><strong>Artifact:</strong> Same CS 360 Inventory App.</p>
-        <p><strong>Enhancement Plan:</strong> Implement SQLite database with tables for spools, colors, and storage locations. Secure sensitive info and enable CSV/JSON exports.</p>
-        <pre>
-FUNCTION addFilament(spool):
-    IF spool is valid:
-        PREPARE SQL "INSERT INTO Spools (id, name, color, weight) VALUES (?, ?, ?, ?)"
-        BIND spool.id, spool.name, spool.color, spool.weight
-        EXECUTE statement
-        RETURN "Spool Added"
-    ELSE:
-        RETURN "Invalid spool"
-
-FUNCTION exportInventory(format):
-    QUERY all spools from database
-    IF format == "CSV":
-        EXPORT results to CSV
-    ELSE IF format == "JSON":
-        EXPORT results to JSON
-    RETURN "Inventory Exported"
-
-FUNCTION protectAdmin(password):
-    RETURN hash(password)
-        </pre>
-        <p><strong>Skills Demonstrated:</strong> Database design, secure coding, optimized queries, integration with UI.</p>
-        <p><strong>Course Outcomes:</strong> #4 & #5</p>
+        <!-- Enhancement 3 -->
+        <h3>Databases</h3>
+        <p><strong>Planned Artifact:</strong> CS 360 Inventory App.</p>
+        <p><strong>Planned Enhancement:</strong> I will integrate an SQLite database to store spools, colors, and storage locations. I also plan to add functionality for exporting data to CSV and JSON formats, while ensuring sensitive information is handled securely.</p>
     </section>
 
-    <hr>
-
-    <!-- Skill Set Section -->
+    <!-- Skills Section -->
     <section id="skills">
-        <h2>ePortfolio Overall Skill Set</h2>
-        <h3>Code Review Skills</h3>
+        <h2>Skills Demonstrated</h2>
+        <p>Through my planned enhancements, I will demonstrate the following skills:</p>
         <ul>
-            <li>Separate UI, logic, and database code for easier maintenance.</li>
-            <li>Efficient inventory handling and lookup for large datasets.</li>
-            <li>Secure handling of sensitive information.</li>
-        </ul>
-
-        <h3>Narrative Skills</h3>
-        <ul>
-            <li>Explain improvements in search, sorting, and filtering.</li>
-            <li>Document how database and security measures protect data.</li>
-            <li>Communicate design decisions for usability, speed, and safety.</li>
-        </ul>
-
-        <h3>Professional Self-Assessment</h3>
-        <ul>
-            <li>Show growth in building apps from start to finish with screens, database, and security.</li>
-            <li>Demonstrate problem-solving with coding, database, and secure practices.</li>
-            <li>Identify areas of improvement in my own projects and implement changes.</li>
+            <li>Separating UI, logic, and database code for easier maintenance.</li>
+            <li>Using efficient data structures for faster lookups and organization.</li>
+            <li>Planning unit testing and quality assurance strategies.</li>
+            <li>Applying secure coding practices to protect data.</li>
+            <li>Explaining technical design choices clearly to a wide audience.</li>
         </ul>
     </section>
-
-    <hr>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:timothyjjohnson2@gmail.com">timothyjjohnson2@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/timothyjjohnson">https://github.com/timothyjjohnson</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/tjtimothyjohnson/">https://www.linkedin.com/in/tjtimothyjohnson/</a></p>
+        <p>GitHub: <a href="https://github.com/timothyjjohnson">github.com/timothyjjohnson</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/tjtimothyjohnson/">linkedin.com/in/tjtimothyjohnson</a></p>
     </section>
 
-    <hr>
     <footer>
-        <p>&copy; 2025 Timothy Johnson</p>
+        <p>&copy; 2025 Timothy Johnson | CS 499 ePortfolio</p>
     </footer>
 </body>
 </html>
-
-
-
 
 
 
