@@ -29,14 +29,75 @@
 
     <!-- Enhancements -->
     <section id="enhancements">
-        <h2>Enhancements</h2>
-        <p>This portfolio focuses on three areas where I enhanced my work: software design, algorithms, and databases. Each enhancement includes the original artifact, the improved version, and a written narrative documenting the changes.</p>
-        <ul>
-            <li><a href="software-design/enhanced/">Software Design & Engineering</a></li>
-            <li><a href="algorithms/enhanced/">Algorithms & Data Structures</a></li>
-            <li><a href="databases/enhanced/">Databases</a></li>
-        </ul>
-    </section>
+    <h2>Enhancements</h2>
+    <p>This portfolio focuses on three areas where I enhanced my work: software design, algorithms, and databases. Each enhancement includes the original artifact, the improved version, and a written narrative documenting the planned changes.</p>
+
+    <!-- Software Design & Engineering -->
+    <h3>Software Design & Engineering</h3>
+    <p><strong>Artifact:</strong> CS 360 Inventory App for managing 3D printing filament.</p>
+    <p><strong>Planned Enhancement:</strong> Refine UI layout, spacing, font sizes, add custom icons (like filament spools), and make the app more user-friendly.</p>
+    <h4>Pseudo-code:</h4>
+    <pre>
+WHEN user adds new filament:
+    SAVE filament info
+    SHOW confirmation message with filament details
+    UPDATE inventory screen
+    </pre>
+    <p><strong>Explanation:</strong> This pseudo-code outlines the user flow when adding a new filament. It shows my focus on UI refinement, event handling, and modular design. Each step demonstrates how I plan to improve usability while keeping the app organized and functional.</p>
+
+    <!-- Algorithms & Data Structures -->
+    <h3>Algorithms & Data Structures</h3>
+    <p><strong>Artifact:</strong> CS 360 Inventory App.</p>
+    <p><strong>Planned Enhancement:</strong> Implement a <code>FilamentManager</code> class using a HashMap for faster lookups, sorting, and validation.</p>
+    <h4>Pseudo-code:</h4>
+    <pre>
+CLASS FilamentManager:
+    hashmap filaments
+
+FUNCTION addFilament(spool):
+    IF spool.id exists in filaments:
+        SHOW error "Spool already exists"
+    ELSE:
+        filaments.put(spool.id, spool)
+
+FUNCTION findFilamentByID(id):
+    RETURN filaments.get(id)
+
+FUNCTION getSortedFilaments(by):
+    list = filaments.values()
+    SORT list by chosen property (color, weight, type)
+    RETURN list
+    </pre>
+    <p><strong>Explanation:</strong> This pseudo-code shows how I will organize filament data efficiently. Using a HashMap ensures quick lookups and prevents duplicates. Sorting allows better inventory management. These enhancements demonstrate effective use of data structures and algorithm design principles.</p>
+
+    <!-- Databases -->
+    <h3>Databases</h3>
+    <p><strong>Artifact:</strong> CS 360 Inventory App.</p>
+    <p><strong>Planned Enhancement:</strong> Integrate an SQLite database to store spools, colors, and storage locations. Add CSV/JSON export functions and secure sensitive information.</p>
+    <h4>Pseudo-code:</h4>
+    <pre>
+FUNCTION addFilament(spool):
+    IF spool is valid:
+        PREPARE SQL "INSERT INTO Spools (id, name, color, weight) VALUES (?, ?, ?, ?)"
+        BIND spool.id, spool.name, spool.color, spool.weight
+        EXECUTE statement
+        RETURN "Spool Added"
+    ELSE:
+        RETURN "Invalid spool"
+
+FUNCTION exportInventory(format):
+    QUERY all spools from database
+    IF format == "CSV":
+        EXPORT results to CSV
+    ELSE IF format == "JSON":
+        EXPORT results to JSON
+    RETURN "Inventory Exported"
+
+FUNCTION protectAdmin(password):
+    RETURN hash(password)
+    </pre>
+    <p><strong>Explanation:</strong> This pseudo-code outlines planned database interactions. Adding filaments requires validation and secure SQL execution. Export functions demonstrate data portability, and <code>protectAdmin</code> shows secure handling of sensitive data. These improvements align with database best practices and integration with the application UI.</p>
+</section>
 
     <!-- Professional Journey -->
     <section id="journey">
@@ -65,3 +126,4 @@
     </footer>
 </body>
 </html>
+
