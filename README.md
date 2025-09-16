@@ -4,12 +4,8 @@
 **Course:** CS 499  
 **Date:** September 2025  
 
----
-
 ## Overview
 This Android app is an **Inventory Management tool** designed to help users track 3D printing filament spools. It was originally created as a class project and later enhanced for professional-quality usability, functionality, and design.
-
----
 
 ## Features
 - **Add, Edit, Delete, and View Filaments**  
@@ -35,8 +31,6 @@ This Android app is an **Inventory Management tool** designed to help users trac
   - Export inventory to CSV or JSON  
   - Basic password protection for admin actions  
 
----
-
 ## Screenshots
 ![Old Version](images/old1.png)  
 *Old login screen*  
@@ -49,10 +43,3 @@ This Android app is an **Inventory Management tool** designed to help users trac
 
 ![New Inventory](images/new2.png)  
 *Updated inventory view with list layout*  
-
----
-
-## Installation & Usage
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/timothyjjohnson/Timothyjjohnson.github.io.git
