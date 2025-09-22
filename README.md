@@ -23,7 +23,7 @@ This Android app is an **Inventory Management tool** designed to help users trac
   - User feedback messages for success or failure  
 
 - **Algorithms & Data Structures**  
-  - `FilamentManager` class with a **HashMap** for fast lookups  
+  - FilamentManager class with a **HashMap** for fast lookups  
   - Sorting filaments by color, weight, or type  
 
 - **Database Enhancements**  
