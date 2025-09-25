@@ -49,7 +49,7 @@ The app allows users to efficiently manage filament inventory, track details suc
 ![Database Schema](images/newnewnew.png)  
 *Database schema showing tables and relationships*  
 
-![Database Export Example](images/newnewnew2.png)  
+![Database Export Example](images/databasehelper.png)  
 *Example of inventory exported as CSV/JSON*  
 
 ## Technical Details
