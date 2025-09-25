@@ -47,10 +47,10 @@ The app allows users to efficiently manage filament inventory, track details suc
 *Updated inventory view with list layout*  
 
 ![Database Schema](images/newnewnew.png)  
-*Database schema showing tables and relationships*  
+*Database in effect*  
 
 ![Database Export Example](images/databasehelper.png)  
-*Example of inventory exported as CSV/JSON*  
+*Classes after enhancements*  
 
 ## Technical Details
 - **Language:** Java  
