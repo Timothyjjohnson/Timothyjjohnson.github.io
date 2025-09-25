@@ -208,19 +208,33 @@ FUNCTION getSortedFilaments(by):
 </section>
 
     <!-- Databases -->
+<section id="databases">
     <h3 style="color:#9C27B0;">Databases</h3>
     <p><strong>Artifact:</strong> CS 360 Inventory App.</p>
-    <p><strong>Planned Enhancement:</strong> Integrate an SQLite database to store spools, colors, and storage locations. Add CSV/JSON export functions and secure sensitive information.</p>
+    <p><strong>Planned Enhancement:</strong> Integrate an SQLite database to store spools, colors, quantities, and storage locations. Add CSV/JSON export functions for data portability, and implement secure handling of sensitive information.</p>
+
     <h4>Pseudo-code:</h4>
     <pre>
 FUNCTION addFilament(spool):
     IF spool is valid:
-        PREPARE SQL "INSERT INTO Spools (id, name, color, weight) VALUES (?, ?, ?, ?)"
-        BIND spool.id, spool.name, spool.color, spool.weight
+        PREPARE SQL "INSERT INTO Spools (id, name, color, quantity, location) VALUES (?, ?, ?, ?, ?)"
+        BIND spool.id, spool.name, spool.color, spool.quantity, spool.location
         EXECUTE statement
         RETURN "Spool Added"
     ELSE:
         RETURN "Invalid spool"
+
+FUNCTION updateFilament(spool):
+    PREPARE SQL "UPDATE Spools SET name=?, color=?, quantity=?, location=? WHERE id=?"
+    BIND spool.name, spool.color, spool.quantity, spool.location, spool.id
+    EXECUTE statement
+    RETURN "Spool Updated"
+
+FUNCTION deleteFilament(id):
+    PREPARE SQL "DELETE FROM Spools WHERE id=?"
+    BIND id
+    EXECUTE statement
+    RETURN "Spool Deleted"
 
 FUNCTION exportInventory(format):
     QUERY all spools from database
@@ -233,7 +247,37 @@ FUNCTION exportInventory(format):
 FUNCTION protectAdmin(password):
     RETURN hash(password)
     </pre>
-    <p><strong>Explanation:</strong> This pseudo-code outlines planned database interactions. Adding filaments requires validation and secure SQL execution. Export functions demonstrate data portability, and protectAdmin shows secure handling of sensitive data. These improvements align with database best practices and integration with the application UI.</p>
+
+    <p><strong>Explanation:</strong></p>
+    <p>This pseudo-code demonstrates how I integrated an SQLite database to store filament data securely and reliably. CRUD operations (Create, Read, Update, Delete) are implemented using prepared statements to avoid SQL injection. Export functions allow users to save inventory in CSV or JSON formats for portability. The protectAdmin function illustrates secure handling of sensitive administrative data, aligning with best practices for data security.</p>
+
+    <h4>Enhancements & Outcomes</h4>
+    <ul>
+        <li>Created SQLite tables for spools, colors, quantities, and storage locations.</li>
+        <li>Implemented full CRUD operations (add, edit, delete) with prepared statements.</li>
+        <li>Added CSV and JSON export functionality for inventory data portability.</li>
+        <li>Ensured input validation to prevent invalid or duplicate data entries.</li>
+        <li>Implemented secure handling of sensitive data using hashing for admin credentials.</li>
+        <li>Improved database performance by optimizing queries and indexing key columns.</li>
+        <li>Separated data management logic from UI, enhancing modularity and maintainability.</li>
+        <li>Reflected industry best practices for software design and database integration.</li>
+    </ul>
+
+    <p><strong>Progress in Outcomes:</strong></p>
+    <ul>
+        <li><strong>Outcome 3:</strong> Designed and evaluated computing solutions by implementing database-driven CRUD functionality and optimized queries.</li>
+        <li><strong>Outcome 4:</strong> Demonstrated ability to use innovative techniques and tools, including SQLite, prepared statements, and export functionality.</li>
+        <li><strong>Outcome 2:</strong> Communicated technical details effectively through pseudo-code, explanations, and organized documentation.</li>
+        <li><strong>Outcome 5:</strong> Developed a security mindset by using input validation, secure SQL execution, and hashed password storage.</li>
+    </ul>
+
+    <!-- image showing database structure -->
+    <div style="text-align:center; margin:20px 0;">
+        <img src="images/newnewnew.png" alt="Database Schema" style="width:400px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.3);">
+    </div>
+    <div style="text-align:center; margin:20px 0;">
+    <img src="images/databasehelper.png" alt="Database Export Example" style="width:400px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.3);">
+</div>
 </section>
 
     <!-- Professional Journey -->
@@ -263,6 +307,7 @@ FUNCTION protectAdmin(password):
     </footer>
 </body>
 </html>
+
 
 
 
