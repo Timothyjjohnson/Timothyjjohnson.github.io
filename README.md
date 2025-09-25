@@ -33,21 +33,24 @@ The app allows users to efficiently manage filament inventory, track details suc
   - Export inventory to CSV or JSON  
   - Basic password protection for admin actions  
 
-## Screenshots 
-![Old Version](images/old1.png) 
-*Old login screen* 
-![New Version](images/new1.png) 
-*Enhanced login screen* 
-![Old Inventory](images/old2.png) 
-*Original inventory view* 
-![New Inventory](images/new2.png) 
-*Updated inventory view with list layout* 
-![Database Schema](images/newnewnew.png) 
-*Database in effect* 
-![Database Export Example](images/databasehelper.png) 
-*Classes after Enhancements*
+## Screenshots
+![Old Version](images/old1.png)  
+*Old login screen*  
 
-</div>
+![New Version](images/new1.png)  
+*Enhanced login screen*  
+
+![Old Inventory](images/old2.png)  
+*Original inventory view*  
+
+![New Inventory](images/new2.png)  
+*Updated inventory view with list layout*  
+
+![Database Schema](images/newnewnew.png)  
+*Database schema showing tables and relationships*  
+
+![Database Export Example](images/newnewnew2.png)  
+*Example of inventory exported as CSV/JSON*  
 
 ## Technical Details
 - **Language:** Java  
