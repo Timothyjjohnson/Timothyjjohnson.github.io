@@ -34,23 +34,40 @@ The app allows users to efficiently manage filament inventory, track details suc
   - Basic password protection for admin actions  
 
 ## Screenshots
-![Old Version](images/old1.png)  
-*Old login screen*  
 
-![New Version](images/new1.png)  
-*Enhanced login screen*  
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
 
-![Old Inventory](images/old2.png)  
-*Original inventory view*  
+  <div style="flex: 1 1 200px; text-align: center;">
+    <img src="images/old1.png" alt="Old Version" style="width: 100%; max-width: 200px; border-radius:10px;">
+    <p>Old login screen</p>
+  </div>
 
-![New Inventory](images/new2.png)  
-*Updated inventory view with list layout*  
+  <div style="flex: 1 1 200px; text-align: center;">
+    <img src="images/new1.png" alt="New Version" style="width: 100%; max-width: 200px; border-radius:10px;">
+    <p>Enhanced login screen</p>
+  </div>
 
-![Database Schema](images/newnewnew.png)  
-*Database in effect*  
+  <div style="flex: 1 1 200px; text-align: center;">
+    <img src="images/old2.png" alt="Old Inventory" style="width: 100%; max-width: 200px; border-radius:10px;">
+    <p>Original inventory view</p>
+  </div>
 
-![Database Export Example](images/databasehelper.png)  
-*Classes after Enhancements*  
+  <div style="flex: 1 1 200px; text-align: center;">
+    <img src="images/new2.png" alt="New Inventory" style="width: 100%; max-width: 200px; border-radius:10px;">
+    <p>Updated inventory view</p>
+  </div>
+
+  <div style="flex: 1 1 200px; text-align: center;">
+    <img src="images/newnewnew.png" alt="Database Schema" style="width: 100%; max-width: 200px; border-radius:10px;">
+    <p>Database in effect</p>
+  </div>
+
+  <div style="flex: 1 1 200px; text-align: center;">
+    <img src="images/databasehelper.png" alt="Database Export Example" style="width: 100%; max-width: 200px; border-radius:10px;">
+    <p>Classes after Enhancements</p>
+  </div>
+
+</div>
 
 ## Technical Details
 - **Language:** Java  
